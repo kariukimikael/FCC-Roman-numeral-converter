@@ -1,4 +1,3 @@
-
 const inputValue = document.getElementById('number');
 const convertBtn = document.getElementById('convert-btn');
 const output = document.getElementById('output');
@@ -11,10 +10,14 @@ const userInput = () => {
     const numberValue = parseInt(inputValue.value);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Check whether user has entered a value.
 =======
         // Enter a number if input element is empty
 >>>>>>> 2e98831 (update)
+=======
+    // Enter a number if input element is empty
+>>>>>>> 80ef2d2 (update)
     if (inputValue.value.length === 0) {
         output.textContent = 'Please enter a valid number';
         output.classList.add('is-error');
@@ -40,7 +43,7 @@ const userInput = () => {
     } else if (numberValue >= 4000) {
         output.textContent = 'Please enter a number less than or equal to 3999';
         output.classList.add('is-error');
-        
+
         // If number is between 1 and 3999
 >>>>>>> 2e98831 (update)
     } else {
