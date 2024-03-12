@@ -7,6 +7,8 @@ convertBtn.addEventListener('click', () => {
 });
 
 const userInput = () => {
+
+        // Convert user input into an integer.
     const numberValue = parseInt(inputValue.value);
 
         // Check whether user has entered a value.
@@ -14,7 +16,7 @@ const userInput = () => {
         output.textContent = 'Please enter a valid number';
         output.classList.add('is-error');
 
-        // If number is less than or equal to zero
+        //Check if value is less than or equal to zero
     } else if (numberValue <= 0) {
         output.textContent = 'Please enter a number greater than or equal to 1';
         output.classList.add('is-error');
@@ -25,11 +27,6 @@ const userInput = () => {
         output.classList.add('is-error');
 
         // If everything checks out then value may be converted to a roman numeral
-    } else if (numberValue >= 4000) {
-        output.textContent = 'Please enter a number less than or equal to 3999';
-        output.classList.add('is-error');
-
-        // If number is between 1 and 3999
     } else {
         output.textContent = convertToRoman(numberValue);
         output.classList.add('is-correct');
